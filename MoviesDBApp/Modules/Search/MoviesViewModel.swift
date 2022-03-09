@@ -56,19 +56,19 @@ final class MoviesViewModel: MoviesViewModelType {
         state = ViewState.loading
         let publisher =   self.repository.getMovies(apiRequest: apiRequest)
         
-        let cancalable = publisher.sink { [weak self ]completion in
+        let cancelable = publisher.sink { [weak self ]completion in
             switch completion {
             case .finished:
                 break
             case .failure(_):
-                self?.state = ViewState.error("Network Not Availale")
+                self?.state = ViewState.error("Network Not Available")
             }
         } receiveValue: { [weak self] movies in
             self?.movies = movies
             self?.state = ViewState.finishedLoading
         }
 
-        self.cancellables.insert(cancalable)
+        self.cancellables.insert(cancelable)
     }
     
     func markFavourite(isSelected: Bool, index: Int) {

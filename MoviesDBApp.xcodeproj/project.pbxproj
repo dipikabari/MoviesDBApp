@@ -242,7 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				84E5CF1827D8F96600EF5213 /* CoreData */,
-				84E5CF1D27D8F96600EF5213 /* MovieRepository.swift */,
 				84E5CF1E27D8F96600EF5213 /* Model */,
 			);
 			path = Repository;
@@ -262,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				84E5CF1F27D8F96600EF5213 /* MoviesResponse.swift */,
+				84E5CF1D27D8F96600EF5213 /* MovieRepository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
