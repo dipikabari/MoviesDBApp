@@ -11,3 +11,10 @@
 - Using Combine framework
 - Unit test
 - Storyboard for UI
+
+
+{
+    "name": "eBay UK",
+    "url": "www.ebay.co.uk",
+    "icon": "https://pages.ebay.com/favicon.ico"
+}
